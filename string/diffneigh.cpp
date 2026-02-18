@@ -1,4 +1,6 @@
 #include<iostream>
+#include<string>
+#include<algorithm>
 using namespace std;
 int main(){
     string str;
@@ -11,7 +13,7 @@ int main(){
             if(str[i]!=str[i+1]) count++;
         }
         else if(i==str.length()-1){
-            
+
             if(str[i]!=str[i-1]) count++; 
         }
         else if(str[i-1]!=str[i]&&str[i]!=str[i+1]){
